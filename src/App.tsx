@@ -18,7 +18,7 @@ function App() {
                     <Sidebar />
                 </div>
                 <div className="overflow-x-hidden pl-4 px-4">
-                    <div className="sticky top-0 bg-white overflow-auto py-2">
+                    <div className="sticky top-0 bg-white overflow-auto py-2 z-10">
                         <Categories
                             categories={CategoriesItems}
                             selectedCategory={selectedCategory}
