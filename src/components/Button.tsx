@@ -12,7 +12,7 @@ const Button = ({ children, title, className, onClick }: ButtonProps) => {
         <button
             onClick={onClick}
             className={classNames(
-                "p-2 rounded-full bg-slate-100 hover:bg-slate-200 duration-300 whitespace-pre",
+                "p-2 rounded-full bg-slate-100 hover:bg-slate-200 duration-300 whitespace-nowrap",
                 className
             )}
         >
