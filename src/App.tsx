@@ -4,6 +4,7 @@ import Header from "./layouts/Header";
 import { CategoriesItems } from "./static/CategoriesItems";
 import { VideosItems } from "./static/VideosItems";
 import Video from "./components/Video";
+import Sidebar from "./components/Sidebar";
 
 function App() {
     const [selectedCategory, setSelectedCategory] = useState(
@@ -12,12 +13,12 @@ function App() {
     return (
         <div className="max-h-screen flex flex-col">
             <Header />
-            <div className="grid grid-cols-[auto,1fr] flex-grow-1 overflow-auto p-2">
-                <div className="pt-1">Sidebar</div>
-                <div className="overflow-x-hidden pl-2 px-4">
-                    <div
-                        className="sticky top-0 bg-white overflow-auto py-2"
-                    >
+            <div className="grid grid-cols-[auto,1fr] flex-grow-1 overflow-auto py-2">
+                <div className="pt-1 hidden md:block">
+                    <Sidebar />
+                </div>
+                <div className="overflow-x-hidden pl-4 px-4">
+                    <div className="sticky top-0 bg-white overflow-auto py-2">
                         <Categories
                             categories={CategoriesItems}
                             selectedCategory={selectedCategory}
