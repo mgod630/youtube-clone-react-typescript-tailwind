@@ -10,4 +10,9 @@ export const CategoriesItems = [
     "Computer Science",
     "Technology",
     "Hardware",
+    "rpg games",
+    "japenese anime",
+    "frontend",
+    "NASA",
+    "Devops",
 ];
